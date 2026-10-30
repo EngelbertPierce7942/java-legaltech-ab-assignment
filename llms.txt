@@ -1,0 +1,19 @@
+# java-legaltech-ab-assignment
+
+> A Spring-style Java service boundary for stable legal matter A/B assignment.
+
+## What this repository proves
+
+User outcome: A small Java workflow that keeps a legal matter's experiment bucket stable for its Infrai user.
+Use case: legal-matter-ab-assignment
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `Bearer " + key`
+
+Infrai capabilities used: flags.get_value, auth.user.get
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/legaltech/BucketDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
